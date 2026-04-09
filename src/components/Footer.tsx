@@ -49,7 +49,7 @@ export default function Footer() {
           {/* CTA */}
           <motion.div initial="hidden" whileInView="visible" variants={fadeInVariants} className="space-y-4">
             <h4 className="font-medium text-sm uppercase tracking-widest">Books</h4>
-            <a href="https://amazon.com" className="btn btn-primary text-xs py-2 px-4 block text-center">
+            <a href="https://www.amazon.com/stores/author/B0GCLNGCF4/about" className="btn btn-primary text-xs py-2 px-4 block text-center">
               Read on Amazon
             </a>
           </motion.div>

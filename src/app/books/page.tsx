@@ -27,7 +27,8 @@ export default function Books() {
         'Reflections on duty and identity',
         'Journey toward healing and understanding',
       ],
-      amazonUrl: 'https://amazon.com/Letters-Sand-Scott-Metcalf/dp/XXXXXXXXXX',
+      image: '/images/letters-from-sand.svg',
+      amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
     {
       id: 'soldiers-sandbox',
@@ -37,6 +38,7 @@ export default function Books() {
       pages: 288,
       description:
         'Soldiers in the Sandbox deepens the exploration begun in the first memoir. This work examines the collective experience of soldiers in shared spaces—the barracks, the missions, the quiet moments of vulnerability. Scott explores themes of masculinity in military culture, the moral weight of command decisions, and the lasting bonds between soldiers who have seen combat together. A testament to the complexity of human connection under extreme circumstances.',
+      image: '/images/soldiers-in-sandbox.svg',
       details: [
         'Collective soldier narratives',
         'Military culture and identity',
@@ -44,7 +46,7 @@ export default function Books() {
         'Brotherhood and loyalty',
         'The aftermath of deployment',
       ],
-      amazonUrl: 'https://amazon.com/Soldiers-Sandbox-Scott-Metcalf/dp/XXXXXXXXXX',
+      amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
     {
       id: 'letter-home',
@@ -61,7 +63,8 @@ export default function Books() {
         'Connection to home and family',
         'Authentic, in-the-moment voice',
       ],
-      amazonUrl: 'https://amazon.com/Letter-Home-Sandbox-Scott-Metcalf/dp/XXXXXXXXXX',
+      image: '/images/letter-home-sandbox.svg',
+      amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
   ]
 

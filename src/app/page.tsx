@@ -15,7 +15,8 @@ export default function Home() {
       subtitle: 'A Reflective Memoir',
       description:
         'A raw and intimate exploration of deployment experiences in Iraq, examining the psychological weight of combat and the bonds forged in the desert. Through personal correspondence, Scott captures the emotional landscape of a soldier preparing to return home.',
-      amazonUrl: 'https://amazon.com/Letters-Sand-Scott-Metcalf/dp/XXXXXXXXXX',
+      image: '/images/letters-from-sand.svg',
+      amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
     {
       id: 'soldiers-sandbox',
@@ -23,7 +24,8 @@ export default function Home() {
       subtitle: 'Continued Reflections',
       description:
         'An extension of the author\'s reflections, this memoir delves deeper into the brotherhood of soldiers, the moral complexities of war, and the lasting psychological impact. A testament to human resilience in the face of adversity.',
-      amazonUrl: 'https://amazon.com/Soldiers-Sandbox-Scott-Metcalf/dp/XXXXXXXXXX',
+      image: '/images/soldiers-in-sandbox.svg',
+      amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
     {
       id: 'letter-home',
@@ -31,7 +33,8 @@ export default function Home() {
       subtitle: 'Personal Correspondence',
       description:
         'A collection of personal letters written during deployment, offering an unfiltered window into the daily realities of military life. These intimate dispatches reveal the human side of soldiers far from home, grappling with duty, fear, and hope.',
-      amazonUrl: 'https://amazon.com/Letter-Home-Sandbox-Scott-Metcalf/dp/XXXXXXXXXX',
+      image: '/images/letter-home-sandbox.svg',
+      amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
   ]
 
@@ -230,7 +233,7 @@ export default function Home() {
             <p className="text-body text-charcoal/70 dark:text-dark-text-secondary">
               Available on Amazon. Dive into the complete stories or start with a preview.
             </p>
-            <Button href="https://amazon.com" variant="primary">
+            <Button href="https://www.amazon.com/stores/author/B0GCLNGCF4/about" variant="primary">
               Browse on Amazon
             </Button>
           </motion.div>
