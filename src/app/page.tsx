@@ -24,7 +24,7 @@ export default function Home() {
       subtitle: 'Continued Reflections',
       description:
         'An extension of the author\'s reflections, this memoir delves deeper into the brotherhood of soldiers, the moral complexities of war, and the lasting psychological impact. A testament to human resilience in the face of adversity.',
-      image: 'https://imgur.com/R6qIVw3thn.jpg',
+      image: 'https://imgur.com/R6qIVw3.jpg',
       amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
     {

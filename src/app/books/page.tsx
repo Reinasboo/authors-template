@@ -38,7 +38,7 @@ export default function Books() {
       pages: 288,
       description:
         'Soldiers in the Sandbox deepens the exploration begun in the first memoir. This work examines the collective experience of soldiers in shared spaces—the barracks, the missions, the quiet moments of vulnerability. Scott explores themes of masculinity in military culture, the moral weight of command decisions, and the lasting bonds between soldiers who have seen combat together. A testament to the complexity of human connection under extreme circumstances.',
-      image: 'https://imgur.com/R6qIVw3thn.jpg',
+      image: 'https://imgur.com/R6qIVw3.jpg',
       details: [
         'Collective soldier narratives',
         'Military culture and identity',
