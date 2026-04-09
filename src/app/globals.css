@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  @apply transition-colors duration-300;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(61, 40, 23) transparent;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(61, 40, 23);
+  border-radius: 4px;
+}
+
+html.dark {
+  scrollbar-color: rgb(107, 142, 107) transparent;
+}
+
+html.dark::-webkit-scrollbar-thumb {
+  background-color: rgb(107, 142, 107);
+}
+
+body {
+  @apply bg-sand-light text-deep-brown;
+}
+
+html.dark body {
+  @apply bg-dark-bg text-dark-text;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif font-bold;
+}
+
+h1 {
+  @apply text-display-lg;
+}
+
+h2 {
+  @apply text-display-md;
+}
+
+h3 {
+  @apply text-heading-lg;
+}
+
+p {
+  @apply text-body leading-relaxed;
+}
+
+/* Links */
+a {
+  @apply text-deep-brown hover:text-brown-light transition-colors;
+}
+
+html.dark a {
+  @apply text-dark-text hover:text-green-accent;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-block px-6 py-3 font-medium text-sm transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-deep-brown text-sand hover:bg-brown-light;
+}
+
+html.dark .btn-primary {
+  @apply bg-green-accent text-dark-bg hover:bg-muted-green;
+}
+
+.btn-secondary {
+  @apply border-2 border-deep-brown text-deep-brown hover:bg-deep-brown hover:text-sand;
+}
+
+html.dark .btn-secondary {
+  @apply border-2 border-green-accent text-dark-text hover:bg-green-accent hover:text-dark-bg;
+}
+
+.btn-ghost {
+  @apply text-deep-brown hover:text-brown-light;
+}
+
+html.dark .btn-ghost {
+  @apply text-dark-text hover:text-green-accent;
+}
+
+/* Containers */
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-spacing-3xl;
+}
+
+.section-container-tight {
+  @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-spacing-2xl;
+}
+
+/* Grain texture overlay */
+.grain-overlay {
+  position: relative;
+}
+
+.grain-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise' seeds='1' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  background-size: 400px 400px;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+html.dark .grain-overlay::before {
+  mix-blend-mode: screen;
+  opacity: 0.3;
+}
+
+/* Smooth scroll sections */
+.scroll-section {
+  @apply relative py-spacing-3xl;
+}
+
+/* Dividers */
+.divider {
+  @apply h-px bg-charcoal opacity-10;
+}
+
+html.dark .divider {
+  @apply bg-dark-border;
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+a:focus-visible {
+  @apply outline-2 outline-offset-2 outline-deep-brown;
+}
+
+html.dark button:focus-visible,
+html.dark a:focus-visible {
+  @apply outline-green-accent;
+}
+
+/* Selection styling */
+::selection {
+  @apply bg-deep-brown text-sand;
+}
+
+html.dark ::selection {
+  @apply bg-green-accent text-dark-bg;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-deep-brown rounded hover:bg-brown-light;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  @apply bg-green-accent hover:bg-muted-green;
+}
+
+/* Image hover effect */
+.image-hover {
+  @apply transition-transform duration-300;
+}
+
+.image-hover:hover {
+  @apply scale-[1.02];
+}
+
+/* Text gradient */
+.text-gradient {
+  @apply bg-gradient-to-r from-deep-brown to-muted-green bg-clip-text text-transparent;
+}
+
+html.dark .text-gradient {
+  @apply from-green-accent to-muted-green;
+}
