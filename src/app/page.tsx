@@ -16,7 +16,7 @@ export default function Home() {
       description:
         'A raw and intimate exploration of deployment experiences in Iraq, examining the psychological weight of combat and the bonds forged in the desert. Through personal correspondence, Scott captures the emotional landscape of a soldier preparing to return home.',
       image: 'https://imgur.com/OAJtzds.jpg',
-      amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
+      amazonUrl: 'https://www.amazon.com/Letter-Home-Sandbox-Scott-Metcalf-ebook/dp/B0G1D2Q2HP?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.UBSdf-GztWfLGUCavloXMF6MZWWs7hbeSKFBDXia9s-2AuAxBZ8T_lqnrE8l7r1bj-V0f35gOp2Qt9OBYv_gosf8Snu7DJ2cIGIvDvGSXUDDKbsBymJ2Xd2GNs3e3e9F.fd0XyMBWwTV7haQ2JTfCYLsXDH5sVCOxvBsrPmEABtU&dib_tag=AUTHOR',
     },
     {
       id: 'soldiers-sandbox',
@@ -25,7 +25,7 @@ export default function Home() {
       description:
         'An extension of the author\'s reflections, this memoir delves deeper into the brotherhood of soldiers, the moral complexities of war, and the lasting psychological impact. A testament to human resilience in the face of adversity.',
       image: 'https://imgur.com/R6qIVw3.jpg',
-      amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
+      amazonUrl: 'https://www.amazon.com/Soldiers-Sandbox-Scott-G-Metcalf-ebook/dp/B0GFFQ1P2P?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.UBSdf-GztWfLGUCavloXMF6MZWWs7hbeSKFBDXia9s-2AuAxBZ8T_lqnrE8l7r1bj-V0f35gOp2Qt9OBYv_gosf8Snu7DJ2cIGIvDvGSXUDDKbsBymJ2Xd2GNs3e3e9F.fd0XyMBWwTV7haQ2JTfCYLsXDH5sVCOxvBsrPmEABtU&dib_tag=AUTHOR',
     },
     {
       id: 'inside-walls',
@@ -34,7 +34,7 @@ export default function Home() {
       description:
         'A correctional officer memoir that takes away stereotypes and exposes the reality of life inside a modern prison. From the first disorienting day to the emotional toll of years maintaining order, this is a rare insider\'s view of prison life.',
       image: 'https://imgur.com/D8JMFN8.jpg',
-      amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
+      amazonUrl: 'https://www.amazon.com/Inside-Walls-Scott-G-Metcalf-ebook/dp/B0DP1WBSCF?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.UBSdf-GztWfLGUCavloXMF6MZWWs7hbeSKFBDXia9s-2AuAxBZ8T_lqnrE8l7r1bj-V0f35gOp2Qt9OBYv_gosf8Snu7DJ2cIGIvDvGSXUDDKbsBymJ2Xd2GNs3e3e9F.fd0XyMBWwTV7haQ2JTfCYLsXDH5sVCOxvBsrPmEABtU&dib_tag=AUTHOR',
     },
   ]
 
