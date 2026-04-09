@@ -15,7 +15,7 @@ export default function Home() {
       subtitle: 'A Reflective Memoir',
       description:
         'A raw and intimate exploration of deployment experiences in Iraq, examining the psychological weight of combat and the bonds forged in the desert. Through personal correspondence, Scott captures the emotional landscape of a soldier preparing to return home.',
-      image: '/images/letters-from-sand.svg',
+      image: 'https://imgur.com/OAJtzds.jpg',
       amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
     {
@@ -24,16 +24,16 @@ export default function Home() {
       subtitle: 'Continued Reflections',
       description:
         'An extension of the author\'s reflections, this memoir delves deeper into the brotherhood of soldiers, the moral complexities of war, and the lasting psychological impact. A testament to human resilience in the face of adversity.',
-      image: '/images/soldiers-in-sandbox.svg',
+      image: 'https://imgur.com/R6qIVw3thn.jpg',
       amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
     {
-      id: 'letter-home',
-      title: 'Letter Home from the Sandbox',
-      subtitle: 'Personal Correspondence',
+      id: 'inside-walls',
+      title: 'Inside The Walls',
+      subtitle: 'A Correctional Officer Memoir',
       description:
-        'A collection of personal letters written during deployment, offering an unfiltered window into the daily realities of military life. These intimate dispatches reveal the human side of soldiers far from home, grappling with duty, fear, and hope.',
-      image: '/images/letter-home-sandbox.svg',
+        'A correctional officer memoir that takes away stereotypes and exposes the reality of life inside a modern prison. From the first disorienting day to the emotional toll of years maintaining order, this is a rare insider\'s view of prison life.',
+      image: 'https://imgur.com/D8JMFN8.jpg',
       amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
   ]

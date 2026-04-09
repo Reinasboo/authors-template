@@ -27,7 +27,7 @@ export default function Books() {
         'Reflections on duty and identity',
         'Journey toward healing and understanding',
       ],
-      image: '/images/letters-from-sand.svg',
+      image: 'https://imgur.com/OAJtzds.jpg',
       amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
     {
@@ -38,7 +38,7 @@ export default function Books() {
       pages: 288,
       description:
         'Soldiers in the Sandbox deepens the exploration begun in the first memoir. This work examines the collective experience of soldiers in shared spaces—the barracks, the missions, the quiet moments of vulnerability. Scott explores themes of masculinity in military culture, the moral weight of command decisions, and the lasting bonds between soldiers who have seen combat together. A testament to the complexity of human connection under extreme circumstances.',
-      image: '/images/soldiers-in-sandbox.svg',
+      image: 'https://imgur.com/R6qIVw3thn.jpg',
       details: [
         'Collective soldier narratives',
         'Military culture and identity',
@@ -49,21 +49,21 @@ export default function Books() {
       amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
     {
-      id: 'letter-home',
-      title: 'Letter Home from the Sandbox',
-      subtitle: 'Personal Correspondence from Deployment',
-      year: 2022,
-      pages: 224,
+      id: 'inside-walls',
+      title: 'Inside The Walls',
+      subtitle: 'A Correctional Officer Memoir',
+      year: 2023,
+      pages: 304,
       description:
-        'Letter Home from the Sandbox is a collection of actual personal letters written during deployment—unfiltered dispatches from the field. These intimate correspondences offer readers an unmediated window into the daily realities of military life: the fear, humor, homesickness, and profound human connections formed in the desert. The power lies in the authentic voice of soldiers writing in the moment, not retrospectively. A raw and moving testament to human resilience.',
+        'In Inside the Walls, Scott G. Metcalf delivers a correctional officer memoir that takes away stereotypes and exposes the reality of life inside a modern prison. From his first disorienting day walking through steel gates to the emotional toll of years spent maintaining order in a system built on control, this book offers a rare, insider\'s view of the prison world few ever see. This is not a story about heroes or villains. It is a deeply human account of prison life, where trust is fragile and survival depends as much on emotional discipline as physical vigilance.',
+      image: 'https://imgur.com/D8JMFN8.jpg',
       details: [
-        'Actual letters from deployment',
-        'Unfiltered soldier perspective',
-        'Daily realities of military life',
-        'Connection to home and family',
-        'Authentic, in-the-moment voice',
+        'Rare insider\'s view of prison life',
+        'Unspoken rules among correctional officers',
+        'Psychological weight of constant threat',
+        'Criminal justice and law enforcement perspective',
+        'Integrity in a system designed to strip it away',
       ],
-      image: '/images/letter-home-sandbox.svg',
       amazonUrl: 'https://www.amazon.com/stores/author/B0GCLNGCF4/about',
     },
   ]
@@ -309,8 +309,8 @@ export default function Books() {
               },
               {
                 order: 3,
-                title: 'Letter Home from the Sandbox',
-                reason: 'Conclusion. Raw materials that provide textural depth to earlier narratives.',
+                title: 'Inside The Walls',
+                reason: 'Transition. Shifts perspective from military to correctional life, exploring discipline and human cost across institutions.',
               },
             ].map((item) => (
               <motion.div
