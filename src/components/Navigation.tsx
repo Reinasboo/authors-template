@@ -3,12 +3,12 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X, Moon, Sun } from 'lucide-react'
-import { useTheme } from '@/lib/ThemeContext'
+import { useThemeSafe } from '@/lib/useThemeSafe'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const { theme, toggleTheme } = useTheme()
+  const { theme, toggleTheme } = useThemeSafe()
 
   const links = [
     { href: '/', label: 'Home' },

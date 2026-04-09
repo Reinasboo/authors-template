@@ -1,10 +1,10 @@
 'use client'
 
+import { ReactNode } from 'react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
-import { ReactNode } from 'react'
 
-export default function ClientLayout({ children }: { children: ReactNode }) {
+export default function ClientLayoutWrapper({ children }: { children: ReactNode }) {
   return (
     <>
       <Navigation />

@@ -1,5 +1,7 @@
 'use client'
 
+export const dynamic = 'force-dynamic'
+
 import { motion } from 'framer-motion'
 import { fadeInVariants, slideUpVariants, containerVariants, itemVariants } from '@/lib/animations'
 import { useState } from 'react'

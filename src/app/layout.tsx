@@ -1,12 +1,7 @@
-'use client'
-
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/lib/ThemeContext'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
-
-export const dynamic = 'force-dynamic'
+import ClientLayoutWrapper from '@/components/ClientLayoutWrapper'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -53,11 +48,9 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider>
-          <Navigation />
-          <main>
+          <ClientLayoutWrapper>
             {children}
-          </main>
-          <Footer />
+          </ClientLayoutWrapper>
         </ThemeProvider>
       </body>
     </html>
