@@ -1,4 +1,6 @@
-import type { Metadata } from 'next'
+'use client'
+
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/lib/ThemeContext'
 import Navigation from '@/components/Navigation'
@@ -6,10 +8,14 @@ import Footer from '@/components/Footer'
 
 export const dynamic = 'force-dynamic'
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+}
+
 export const metadata: Metadata = {
   title: 'Scott G. A. Metcalf | Military Memoir Author',
   description: 'Reflective memoirs from a soldier\'s perspective. Explore the stories of war, brotherhood, and resilience.',
-  viewport: 'width=device-width, initial-scale=1.0',
   creator: 'Scott G. A. Metcalf',
   generator: 'Next.js',
   keywords: ['memoir', 'military', 'iraq war', 'author', 'storytelling'],
