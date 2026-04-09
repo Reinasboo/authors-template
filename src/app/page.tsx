@@ -119,14 +119,14 @@ export default function Home() {
             variants={itemVariants}
             className="grid grid-cols-2 gap-spacing-md h-full"
           >
-            <div className="bg-gradient-to-br from-deep-brown/20 to-muted-green/20 dark:from-dark-elevated dark:to-dark-border rounded-lg h-64 flex items-center justify-center">
-              <span className="text-6xl font-serif text-deep-brown/20 dark:text-dark-text-secondary/20">
+            <div className="bg-gradient-to-br from-deep-brown/30 to-muted-green/30 dark:from-green-accent/20 dark:to-muted-green/20 rounded-lg h-64 flex items-center justify-center border-2 border-deep-brown/20 dark:border-green-accent/30">
+              <span className="text-7xl font-serif font-bold text-deep-brown dark:text-green-accent">
                 {new Date().getFullYear() - 2003}
               </span>
             </div>
-            <div className="bg-gradient-to-br from-muted-green/20 to-charcoal/10 dark:from-dark-border dark:to-dark-elevated rounded-lg h-64 flex items-center justify-center">
-              <span className="text-2xl font-serif font-bold text-deep-brown/40 dark:text-dark-text-secondary/40 text-center px-4">
-                Years of Reflection
+            <div className="bg-gradient-to-br from-muted-green/30 to-charcoal/20 dark:from-dark-border dark:to-dark-elevated rounded-lg h-64 flex items-center justify-center border-2 border-muted-green/30 dark:border-green-accent/20">
+              <span className="text-3xl font-serif font-bold text-deep-brown dark:text-green-accent text-center px-4 leading-tight">
+                Years of<br />Reflection
               </span>
             </div>
           </motion.div>
