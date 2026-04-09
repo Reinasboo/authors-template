@@ -170,7 +170,7 @@ export default function Home() {
           variants={containerVariants}
           className="grid grid-cols-1 md:grid-cols-3 gap-spacing-lg"
         >
-          {themes.map((theme, idx) => (
+          {themes.map((theme) => (
             <motion.div
               key={theme.title}
               variants={itemVariants}

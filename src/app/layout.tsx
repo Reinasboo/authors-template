@@ -4,6 +4,8 @@ import { ThemeProvider } from '@/lib/ThemeContext'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Scott G. A. Metcalf | Military Memoir Author',
   description: 'Reflective memoirs from a soldier\'s perspective. Explore the stories of war, brotherhood, and resilience.',

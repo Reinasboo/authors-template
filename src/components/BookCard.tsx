@@ -15,7 +15,6 @@ interface BookCardProps {
 }
 
 export default function BookCard({
-  id,
   title,
   subtitle,
   description,

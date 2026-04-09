@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { fadeInVariants, slideUpVariants, containerVariants, itemVariants } from '@/lib/animations'
+import { fadeInVariants, containerVariants, itemVariants } from '@/lib/animations'
 
 export default function About() {
   return (
@@ -131,7 +131,7 @@ export default function About() {
               title: 'Publication & Advocacy',
               description: 'Publishing the trilogy and advocating for authentic veteran voices in literature and culture.',
             },
-          ].map((milestone, idx) => (
+          ].map((milestone) => (
             <motion.div key={milestone.year} variants={itemVariants} className="flex gap-spacing-lg">
               <div className="min-w-fit">
                 <span className="font-serif font-bold text-heading-sm text-deep-brown dark:text-green-accent">

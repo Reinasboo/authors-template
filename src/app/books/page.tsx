@@ -307,7 +307,7 @@ export default function Books() {
                 title: 'Letter Home from the Sandbox',
                 reason: 'Conclusion. Raw materials that provide textural depth to earlier narratives.',
               },
-            ].map((item, idx) => (
+            ].map((item) => (
               <motion.div
                 key={item.order}
                 variants={itemVariants}

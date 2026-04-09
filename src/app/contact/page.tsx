@@ -2,9 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { fadeInVariants, slideUpVariants, containerVariants, itemVariants } from '@/lib/animations'
-import Button from '@/components/Button'
 import { useState } from 'react'
-import { Mail, Linkedin, Twitter, Phone } from 'lucide-react'
+import { Mail, Linkedin, Twitter } from 'lucide-react'
 
 export default function Contact() {
   const [formState, setFormState] = useState({
