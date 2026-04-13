@@ -145,7 +145,7 @@ export default function Home() {
             The Work
           </h2>
           <p className="text-body-lg text-charcoal/70 dark:text-dark-text-secondary max-w-2xl">
-            Three interconnected memoirs exploring different facets of military experience and the journey toward healing.
+            Three interconnected memoirs exploring different facets of military experience and the journey toward healing. <strong>Plus 5 additional works</strong> including fiction, reinvention narratives, and international translations.
           </p>
         </motion.div>
 
@@ -154,6 +154,21 @@ export default function Home() {
             <BookCard key={book.id} {...book} index={idx} />
           ))}
         </div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={slideUpVariants}
+          transition={{ delay: 0.3 }}
+          className="mt-spacing-3xl text-center"
+        >
+          <Button href="/books" variant="secondary">
+            Explore Complete Bibliography →
+          </Button>
+          <p className="text-body-sm text-charcoal/60 dark:text-dark-text-secondary mt-spacing-md">
+            8 published works including memoirs, fiction, and international editions
+          </p>
+        </motion.div>
       </section>
 
       {/* Themes Section */}

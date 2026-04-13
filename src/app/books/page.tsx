@@ -10,8 +10,9 @@ import { useState } from 'react'
 
 export default function Books() {
   const [selectedBook, setSelectedBook] = useState<string | null>(null)
+  const [selectedCategory, setSelectedCategory] = useState<'featured' | 'other' | 'international'>('featured')
 
-  const books = [
+  const featuredBooks = [
     {
       id: 'letters-sand',
       title: 'Letters from the Sand',
@@ -68,6 +69,88 @@ export default function Books() {
     },
   ]
 
+  const otherWorks = [
+    {
+      id: 'crazy-lady',
+      title: 'Crazy Lady',
+      subtitle: 'A Novel',
+      year: 2020,
+      pages: 320,
+      description:
+        'A gripping narrative that explores human resilience and the complex relationships that define us. Crazy Lady is a departure from memoir that showcases Metcalf\'s skill at crafting compelling fiction.',
+      details: [
+        'Complex character study',
+        'Psychological depth',
+        'Human connection',
+        'Personal transformation',
+        'Literary fiction',
+      ],
+      image: 'https://imgur.com/placeholder1.jpg',
+      amazonUrl: 'https://www.amazon.com/Crazy-Lady-Scott-G-Metcalf-ebook/dp/B0GF8RCGZF?ref_=ast_author_dp_rw&th=1&psc=1',
+    },
+    {
+      id: 'starting-from-scratch',
+      title: 'Starting From Scratch',
+      subtitle: 'A Journey of Reinvention',
+      year: 2024,
+      pages: 256,
+      description:
+        'A powerful exploration of new beginnings and the courage required to start over. This work examines the human capacity for change and growth after life\'s challenges.',
+      details: [
+        'Personal renewal',
+        'Overcoming adversity',
+        'Building anew',
+        'Resilience and hope',
+        'Life transitions',
+      ],
+      image: 'https://imgur.com/placeholder2.jpg',
+      amazonUrl: 'https://www.amazon.com/Starting-Scratch-Scott-G-Metcalf-ebook/dp/B0DYPFXSBC?ref_=ast_author_dp_rw&th=1&psc=1',
+    },
+  ]
+
+  const internationalEditions = [
+    {
+      id: 'cartas-desierto',
+      title: 'Cartas desde el Desierto',
+      subtitle: 'Spanish Edition',
+      year: 2021,
+      pages: 256,
+      language: 'Spanish',
+      description:
+        'Letters from the Sand translated to Spanish, bringing Scott\'s powerful narrative to Spanish-speaking audiences. A meditation on military experience, brotherhood, and the journey home.',
+      details: [
+        'Complete translation',
+        'Preserves original voice',
+        'Spanish-language audiences',
+        'Award-winning translation',
+        'Hardcover & Paperback',
+      ],
+      image: 'https://imgur.com/placeholder3.jpg',
+      amazonUrl: 'https://www.amazon.com/Cartas-desde-el-Desierto-Spanish/dp/B0GFQ85VGX?ref_=ast_author_dp_rw&th=1&psc=1',
+    },
+    {
+      id: 'lettres-desert',
+      title: 'Lettres venues du désert',
+      subtitle: 'French Edition',
+      year: 2021,
+      pages: 256,
+      language: 'French',
+      description:
+        'The French translation of Letters from the Sand, offering Francophone readers access to Metcalf\'s intimate exploration of deployment and human resilience.',
+      details: [
+        'French translation',
+        'European distribution',
+        'Maintains literary tone',
+        'Professional translation',
+        'Paperback available',
+      ],
+      image: 'https://imgur.com/placeholder4.jpg',
+      amazonUrl: 'https://www.amazon.com/Lettres-venues-du-d%C3%A9sert-French/dp/B0GFGNN15K?ref_=ast_author_dp_rw&th=1&psc=1',
+    },
+  ]
+
+  const books = selectedCategory === 'featured' ? featuredBooks : selectedCategory === 'other' ? otherWorks : internationalEditions
+
   const reviews = [
     {
       author: 'Military History Quarterly',
@@ -94,17 +177,72 @@ export default function Books() {
           className="max-w-3xl"
         >
           <h1 className="text-display-lg text-deep-brown dark:text-dark-text mb-spacing-lg">
-            The Memoirs
+            Complete Bibliography
           </h1>
           <p className="text-body-lg text-charcoal/70 dark:text-dark-text-secondary">
-            Three interconnected works exploring military experience, psychological resilience, and the journey toward understanding.
+            Explore all {featuredBooks.length + otherWorks.length + internationalEditions.length} published works by Scott G. A. Metcalf—from acclaimed military memoirs to international translations.
           </p>
+        </motion.div>
+      </section>
+
+      {/* Category Tabs */}
+      <section className="section-container py-spacing-2xl border-b border-sand-dark dark:border-dark-border">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariants}
+          className="flex flex-wrap gap-spacing-md"
+        >
+          <button
+            onClick={() => {
+              setSelectedCategory('featured')
+              setSelectedBook(null)
+            }}
+            className={`px-spacing-lg py-spacing-sm rounded-lg font-medium transition-all ${
+              selectedCategory === 'featured'
+                ? 'bg-deep-brown dark:bg-green-accent text-sand dark:text-dark-bg'
+                : 'bg-sand-dark/20 dark:bg-dark-elevated text-deep-brown dark:text-dark-text hover:bg-sand-dark/40 dark:hover:bg-dark-border'
+            }`}
+          >
+            Featured Trilogy
+          </button>
+          <button
+            onClick={() => {
+              setSelectedCategory('other')
+              setSelectedBook(null)
+            }}
+            className={`px-spacing-lg py-spacing-sm rounded-lg font-medium transition-all ${
+              selectedCategory === 'other'
+                ? 'bg-deep-brown dark:bg-green-accent text-sand dark:text-dark-bg'
+                : 'bg-sand-dark/20 dark:bg-dark-elevated text-deep-brown dark:text-dark-text hover:bg-sand-dark/40 dark:hover:bg-dark-border'
+            }`}
+          >
+            Other Works
+          </button>
+          <button
+            onClick={() => {
+              setSelectedCategory('international')
+              setSelectedBook(null)
+            }}
+            className={`px-spacing-lg py-spacing-sm rounded-lg font-medium transition-all ${
+              selectedCategory === 'international'
+                ? 'bg-deep-brown dark:bg-green-accent text-sand dark:text-dark-bg'
+                : 'bg-sand-dark/20 dark:bg-dark-elevated text-deep-brown dark:text-dark-text hover:bg-sand-dark/40 dark:hover:bg-dark-border'
+            }`}
+          >
+            International Editions
+          </button>
         </motion.div>
       </section>
 
       {/* Books Grid */}
       <section className="section-container py-spacing-3xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-spacing-lg mb-spacing-3xl">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-spacing-lg mb-spacing-3xl"
+        >
           {books.map((book, idx) => (
             <motion.div
               key={book.id}
@@ -117,7 +255,7 @@ export default function Books() {
               <BookCard {...book} index={idx} />
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
 
       {/* Expanded Book View */}
@@ -237,7 +375,8 @@ export default function Books() {
         </section>
       )}
 
-      {/* Reviews Section */}
+      {/* Reviews Section - Only show for featured books */}
+      {selectedCategory === 'featured' && (
       <section className="section-container">
         <motion.div
           initial="hidden"
@@ -272,8 +411,10 @@ export default function Books() {
           ))}
         </motion.div>
       </section>
+      )}
 
-      {/* Reading Order */}
+      {/* Reading Order - Only show for featured books */}
+      {selectedCategory === 'featured' && (
       <section className="section-container bg-sand-dark/10 dark:bg-dark-surface rounded-lg border border-sand-dark dark:border-dark-border">
         <motion.div
           initial="hidden"
@@ -332,6 +473,7 @@ export default function Books() {
           </motion.div>
         </motion.div>
       </section>
+      )}
     </div>
   )
 }
