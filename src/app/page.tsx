@@ -263,20 +263,7 @@ export default function Home() {
             </Button>
           </motion.div>
 
-          <motion.div
-            variants={itemVariants}
-            className="space-y-spacing-md p-spacing-2xl bg-deep-brown text-sand dark:bg-green-accent dark:text-dark-bg rounded-lg"
-          >
-            <h3 className="text-heading-lg font-serif">
-              Stay Connected
-            </h3>
-            <p className="text-body opacity-90 dark:opacity-100">
-              Subscribe for updates, exclusive excerpts, and insights into the writing process.
-            </p>
-            <Button href="/contact" variant="secondary">
-              Get Updates
-            </Button>
-          </motion.div>
+
         </motion.div>
       </section>
     </div>

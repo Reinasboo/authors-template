@@ -284,38 +284,7 @@ export default function Contact() {
         </motion.div>
       </section>
 
-      {/* Newsletter CTA */}
-      <section className="section-container bg-sand-dark/10 dark:bg-dark-surface rounded-lg border border-sand-dark dark:border-dark-border">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={containerVariants}
-          className="grid grid-cols-1 md:grid-cols-2 gap-spacing-2xl items-center"
-        >
-          <motion.div variants={itemVariants} className="space-y-spacing-md">
-            <h2 className="text-heading-lg font-serif text-deep-brown dark:text-dark-text">
-              Stay Updated
-            </h2>
-            <p className="text-body text-charcoal/70 dark:text-dark-text-secondary">
-              Subscribe to receive updates on new publications, exclusive excerpts, and writing process insights.
-            </p>
-          </motion.div>
 
-          <motion.div
-            variants={itemVariants}
-            className="flex gap-spacing-sm"
-          >
-            <input
-              type="email"
-              placeholder="your@email.com"
-              className="flex-1 px-spacing-md py-spacing-sm border-2 border-sand-dark dark:border-dark-border rounded-lg bg-white dark:bg-dark-elevated text-deep-brown dark:text-dark-text placeholder-charcoal/40 dark:placeholder-dark-text-secondary focus:outline-none focus:border-deep-brown dark:focus:border-green-accent transition-colors"
-            />
-            <button className="px-spacing-lg py-spacing-sm bg-deep-brown hover:bg-brown-light text-sand dark:bg-green-accent dark:text-dark-bg dark:hover:bg-muted-green rounded-lg font-medium transition-colors">
-              Subscribe
-            </button>
-          </motion.div>
-        </motion.div>
-      </section>
     </div>
   )
 }
