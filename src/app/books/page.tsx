@@ -15,12 +15,12 @@ export default function Books() {
   const featuredBooks = [
     {
       id: 'letters-sand',
-      title: 'Letters from the Sand',
+      title: 'Letter to Home from the Sandbox',
       subtitle: 'A Reflective Memoir of Deployment',
       year: 2020,
       pages: 256,
       description:
-        'Letters from the Sand is an intimate exploration of deployment experiences in Iraq. Through personal correspondence and reflective narratives, author Scott G. A. Metcalf examines the psychological and emotional realities of combat deployment. The work is not a war story in the traditional sense—rather, it is a reflection on the interior landscape of soldiers, the bonds forged in shared adversity, and the complexities of reintegration.',
+        'Letter to Home from the Sandbox is an intimate exploration of deployment experiences in Iraq. Through personal correspondence and reflective narratives, author Scott G. A. Metcalf examines the psychological and emotional realities of combat deployment. The work is not a war story in the traditional sense—rather, it is a reflection on the interior landscape of soldiers, the bonds forged in shared adversity, and the complexities of reintegration',
       details: [
         'Personal letters written during deployment',
         'Exploration of military brotherhood',
@@ -117,7 +117,7 @@ export default function Books() {
       pages: 256,
       language: 'Spanish',
       description:
-        'Letters from the Sand translated to Spanish, bringing Scott\'s powerful narrative to Spanish-speaking audiences. A meditation on military experience, brotherhood, and the journey home.',
+        'Letter to Home from the Sandbox translated to Spanish, bringing Scott\'s powerful narrative to Spanish-speaking audiences. A meditation on military experience, brotherhood, and the journey home'.
       details: [
         'Complete translation',
         'Preserves original voice',
@@ -136,7 +136,7 @@ export default function Books() {
       pages: 256,
       language: 'French',
       description:
-        'The French translation of Letters from the Sand, offering Francophone readers access to Metcalf\'s intimate exploration of deployment and human resilience.',
+        'The French translation of Letter to Home from the Sandbox, offering Francophone readers access to Metcalf\'s intimate exploration of deployment and human resilience',
       details: [
         'French translation',
         'European distribution',
@@ -172,16 +172,16 @@ export default function Books() {
       title: 'Retired Army Officer',
       location: 'Fort Bliss, Texas',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-      text: 'Letters from the Sand and Soldiers in the Sandbox aren\'t just memoirs—they\'re mirrors. Scott captures what we don\'t have words for. Essential reading for anyone who\'s served.',
-      books: ['Letters from the Sand', 'Soldiers in the Sandbox'],
+      text: 'Letter to Home from the Sandbox and Soldiers in the Sandbox aren\'t just memoirs—they\'re mirrors. Scott captures what we don\'t have words for. Essential reading for anyone who\'s served.',
+      books: ['Letter to Home from the Sandbox', 'Soldiers in the Sandbox'],
     },
     {
       name: 'Dr. Sarah Chen',
       title: 'Clinical Psychologist',
       location: 'Los Angeles, CA',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
-      text: 'I recommend Metcalf\'s complete works to my clients dealing with trauma and identity. Letters from the Sand, Soldiers in the Sandbox, and Inside the Walls provide powerful frameworks for processing institutional experiences.',
-      books: ['Letters from the Sand', 'Soldiers in the Sandbox', 'Inside The Walls'],
+      text: 'I recommend Metcalf\'s complete works to my clients dealing with trauma and identity. Letter to Home from the Sandbox, Soldiers in the Sandbox, and Inside the Walls provide powerful frameworks for processing institutional experiences.',
+      books: ['Letter to Home from the Sandbox', 'Soldiers in the Sandbox', 'Inside The Walls'],
     },
     {
       name: 'James Wellington',
@@ -559,7 +559,7 @@ export default function Books() {
             {[
               {
                 order: 1,
-                title: 'Letters from the Sand',
+                title: 'Letter to Home from the Sandbox',
                 reason: 'Foundation. Introduction to Scott\'s voice and the core themes of deployment.',
               },
               {
