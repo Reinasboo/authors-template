@@ -85,7 +85,7 @@ export default function Books() {
         'Personal transformation',
         'Literary fiction',
       ],
-      image: 'https://imgur.com/placeholder1.jpg',
+      image: 'https://imgur.com/GfjSvqm.jpg',
       amazonUrl: 'https://www.amazon.com/Crazy-Lady-Scott-G-Metcalf-ebook/dp/B0GF8RCGZF?ref_=ast_author_dp_rw&th=1&psc=1',
     },
     {
@@ -103,7 +103,7 @@ export default function Books() {
         'Resilience and hope',
         'Life transitions',
       ],
-      image: 'https://imgur.com/placeholder2.jpg',
+      image: 'https://imgur.com/4WGRSKH.jpg',
       amazonUrl: 'https://www.amazon.com/Starting-Scratch-Scott-G-Metcalf-ebook/dp/B0DYPFXSBC?ref_=ast_author_dp_rw&th=1&psc=1',
     },
   ]
@@ -125,7 +125,7 @@ export default function Books() {
         'Award-winning translation',
         'Hardcover & Paperback',
       ],
-      image: 'https://imgur.com/placeholder3.jpg',
+      image: 'https://imgur.com/FZnfUIF.jpg',
       amazonUrl: 'https://www.amazon.com/Cartas-desde-el-Desierto-Spanish/dp/B0GFQ85VGX?ref_=ast_author_dp_rw&th=1&psc=1',
     },
     {
@@ -144,7 +144,7 @@ export default function Books() {
         'Professional translation',
         'Paperback available',
       ],
-      image: 'https://imgur.com/placeholder4.jpg',
+      image: 'https://imgur.com/cXOyQrb.jpg',
       amazonUrl: 'https://www.amazon.com/Lettres-venues-du-d%C3%A9sert-French/dp/B0GFGNN15K?ref_=ast_author_dp_rw&th=1&psc=1',
     },
   ]
