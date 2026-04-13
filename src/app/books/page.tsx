@@ -20,7 +20,7 @@ export default function Books() {
       year: 2020,
       pages: 256,
       description:
-        'Letter to Home from the Sandbox is an intimate exploration of deployment experiences in Iraq. Through personal correspondence and reflective narratives, author Scott G. A. Metcalf examines the psychological and emotional realities of combat deployment. The work is not a war story in the traditional sense—rather, it is a reflection on the interior landscape of soldiers, the bonds forged in shared adversity, and the complexities of reintegration',
+        'Letter to Home from the Sandbox is an intimate exploration of deployment experiences in Iraq. Through personal correspondence and reflective narratives, author Scott G. A. Metcalf examines the psychological and emotional realities of combat deployment. The work is not a war story in the traditional sense—rather, it is a reflection on the interior landscape of soldiers, the bonds forged in shared adversity, and the complexities of reintegration.',
       details: [
         'Personal letters written during deployment',
         'Exploration of military brotherhood',
@@ -117,7 +117,7 @@ export default function Books() {
       pages: 256,
       language: 'Spanish',
       description:
-        'Letter to Home from the Sandbox translated to Spanish, bringing Scott\'s powerful narrative to Spanish-speaking audiences. A meditation on military experience, brotherhood, and the journey home'.
+        'Letter to Home from the Sandbox translated to Spanish, bringing Scott\'s powerful narrative to Spanish-speaking audiences. A meditation on military experience, brotherhood, and the journey home.',
       details: [
         'Complete translation',
         'Preserves original voice',
@@ -136,7 +136,7 @@ export default function Books() {
       pages: 256,
       language: 'French',
       description:
-        'The French translation of Letter to Home from the Sandbox, offering Francophone readers access to Metcalf\'s intimate exploration of deployment and human resilience',
+        'The French translation of Letter to Home from the Sandbox, offering Francophone readers access to Metcalf\'s intimate exploration of deployment and human resilience.',
       details: [
         'French translation',
         'European distribution',
