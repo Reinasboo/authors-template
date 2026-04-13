@@ -19,10 +19,14 @@ export default function Navigation() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-sand-light/80 dark:bg-dark-bg/80 border-b border-sand-dark dark:border-dark-border">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="font-serif text-xl font-bold text-deep-brown dark:text-dark-text hover:text-brown-light dark:hover:text-green-accent transition-colors">
-          SCM
+        <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+          <img 
+            src="https://imgur.com/g6qSRMs.png" 
+            alt="Scott G. A. Metcalf" 
+            className="h-12 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}

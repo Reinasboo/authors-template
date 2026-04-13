@@ -15,7 +15,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-spacing-2xl mb-spacing-2xl">
           {/* Brand */}
           <motion.div initial="hidden" whileInView="visible" variants={fadeInVariants} className="space-y-4">
-            <h3 className="font-serif text-lg font-bold">Scott G. A. Metcalf</h3>
+            <img 
+              src="https://imgur.com/g6qSRMs.png" 
+              alt="Scott G. A. Metcalf" 
+              className="h-10 w-auto"
+            />
             <p className="text-sm text-sand/70 dark:text-dark-text-secondary">Military memoir author exploring the human cost of war.</p>
           </motion.div>
 
