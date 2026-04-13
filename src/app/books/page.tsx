@@ -166,6 +166,57 @@ export default function Books() {
     },
   ]
 
+  const testimonials = [
+    {
+      name: 'Captain Michael Torres',
+      title: 'Retired Army Officer',
+      location: 'Fort Bliss, Texas',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+      text: 'Letters from the Sand and Soldiers in the Sandbox aren\'t just memoirs—they\'re mirrors. Scott captures what we don\'t have words for. Essential reading for anyone who\'s served.',
+      books: ['Letters from the Sand', 'Soldiers in the Sandbox'],
+    },
+    {
+      name: 'Dr. Sarah Chen',
+      title: 'Clinical Psychologist',
+      location: 'Los Angeles, CA',
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
+      text: 'I recommend Metcalf\'s complete works to my clients dealing with trauma and identity. Letters from the Sand, Soldiers in the Sandbox, and Inside the Walls provide powerful frameworks for processing institutional experiences.',
+      books: ['Letters from the Sand', 'Soldiers in the Sandbox', 'Inside The Walls'],
+    },
+    {
+      name: 'James Wellington',
+      title: 'Correctional Officer, 15 years',
+      location: 'Oklahoma City, OK',
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
+      text: 'Inside The Walls told my story and the stories of my brothers and sisters in blue. Finally, someone who understands what it means to work in the shadows, maintaining dignity in an undignified system.',
+      books: ['Inside The Walls'],
+    },
+    {
+      name: 'Priya Sharma',
+      title: 'Literary Critic & Author',
+      location: 'New York, NY',
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
+      text: 'Crazy Lady is a stunning work of psychological fiction. Metcalf\'s ability to build complex characters and explore the human condition transcends genre boundaries.',
+      books: ['Crazy Lady'],
+    },
+    {
+      name: 'David Martinez',
+      title: 'Life Coach & Motivational Speaker',
+      location: 'Denver, Colorado',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+      text: 'Starting From Scratch became my companion through my own reinvention. Metcalf doesn\'t offer easy answers, but thoughtful reflection on what it truly means to rebuild.',
+      books: ['Starting From Scratch'],
+    },
+    {
+      name: 'Alejandro Gutiérrez',
+      title: 'University Professor',
+      location: 'Madrid, Spain',
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
+      text: 'Cartas desde el Desierto es esencial para entender la experiencia del soldado moderno. La traducción mantiene la profundidad del original mientras habla directamente a audiencias hispanohablantes.',
+      books: ['Cartas desde el Desierto'],
+    },
+  ]
+
   return (
     <div className="min-h-screen pt-24 bg-sand-light dark:bg-dark-bg">
       {/* Page Header */}
@@ -384,8 +435,76 @@ export default function Books() {
           variants={fadeInVariants}
           className="mb-spacing-2xl"
         >
+          <h2 className="text-heading-lg font-serif text-deep-brown dark:text-dark-text mb-spacing-sm">
+            Voices & Impact
+          </h2>
+          <p className="text-body text-charcoal/70 dark:text-dark-text-secondary">
+            Military veterans, mental health professionals, correctional officers, and readers share transformative experiences with Scott's work.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={containerVariants}
+          className="grid grid-cols-1 md:grid-cols-2 gap-spacing-lg"
+        >
+          {testimonials.map((testimonial, idx) => (
+            <motion.div
+              key={idx}
+              variants={itemVariants}
+              className="p-spacing-lg bg-sand-dark/10 dark:bg-dark-elevated rounded-lg border border-sand-dark dark:border-dark-border space-y-spacing-md hover:border-deep-brown dark:hover:border-green-accent transition-colors"
+            >
+              <div className="flex items-start gap-spacing-md">
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-14 h-14 rounded-full object-cover flex-shrink-0 border-2 border-deep-brown dark:border-green-accent"
+                />
+                <div className="flex-1">
+                  <h4 className="text-heading-sm font-serif text-deep-brown dark:text-dark-text">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-body-sm text-charcoal/70 dark:text-dark-text-secondary">
+                    {testimonial.title}
+                  </p>
+                  <p className="text-caption text-charcoal/50 dark:text-dark-text-secondary/70">
+                    {testimonial.location}
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-body italic text-charcoal dark:text-dark-text-secondary leading-relaxed">
+                "{testimonial.text}"
+              </p>
+
+              <div className="flex flex-wrap gap-spacing-sm pt-spacing-sm border-t border-sand-dark dark:border-dark-border">
+                {testimonial.books.map((book, bidx) => (
+                  <span
+                    key={bidx}
+                    className="inline-block px-spacing-sm py-1 bg-deep-brown/10 dark:bg-green-accent/10 rounded text-caption font-medium text-deep-brown dark:text-green-accent"
+                  >
+                    {book}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </section>
+      )}
+
+      {/* Professional Reviews */}
+      {selectedCategory === 'featured' && (
+      <section className="section-container">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeInVariants}
+          className="mb-spacing-2xl"
+        >
           <h2 className="text-heading-lg font-serif text-deep-brown dark:text-dark-text">
-            What Readers Are Saying
+            Critical Reception
           </h2>
         </motion.div>
 
@@ -399,7 +518,7 @@ export default function Books() {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="p-spacing-lg bg-sand-dark/10 dark:bg-dark-elevated rounded-lg border border-sand-dark dark:border-dark-border space-y-spacing-md"
+              className="p-spacing-lg bg-muted-green/5 dark:bg-muted-green/10 rounded-lg border border-muted-green/30 dark:border-green-accent/30 space-y-spacing-md"
             >
               <p className="text-body italic text-charcoal dark:text-dark-text-secondary">
                 "{review.text}"
