@@ -244,6 +244,46 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* Author Profile Section */}
+      <section className="section-container">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={containerVariants}
+          className="grid grid-cols-1 md:grid-cols-2 gap-spacing-3xl items-center"
+        >
+          <motion.div variants={itemVariants} className="order-2 md:order-1">
+            <div className="relative rounded-lg overflow-hidden border-4 border-deep-brown dark:border-green-accent shadow-xl">
+              <img
+                src="https://imgur.com/n6TvYYX.jpg"
+                alt="Scott G. A. Metcalf"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="order-1 md:order-2 space-y-spacing-lg">
+            <div>
+              <h2 className="text-heading-lg font-serif text-deep-brown dark:text-dark-text mb-spacing-md">
+                About the Author
+              </h2>
+              <p className="text-body text-charcoal dark:text-dark-text-secondary leading-relaxed mb-spacing-md">
+                Scott G. A. Metcalf is a military memoir author whose work explores the psychological and emotional realities of combat deployment, institutional life, and the human capacity for resilience.
+              </p>
+              <p className="text-body text-charcoal dark:text-dark-text-secondary leading-relaxed">
+                His work has been praised for its emotional honesty, literary craftsmanship, and refusal to simplify complex experiences. When he's not writing, Scott believes in building genuine connections with readers who've found meaning in his stories.
+              </p>
+            </div>
+
+            <div className="pt-spacing-md border-t border-sand-dark dark:border-dark-border">
+              <p className="text-body-sm text-charcoal/70 dark:text-dark-text-secondary italic">
+                "I read every message. Your thoughts, questions, and stories matter."
+              </p>
+            </div>
+          </motion.div>
+        </motion.div>
+      </section>
+
       {/* Newsletter CTA */}
       <section className="section-container bg-sand-dark/10 dark:bg-dark-surface rounded-lg border border-sand-dark dark:border-dark-border">
         <motion.div

@@ -25,6 +25,25 @@ export default function About() {
         </motion.div>
       </section>
 
+      {/* Featured Author Image */}
+      <section className="section-container py-spacing-3xl">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={fadeInVariants}
+          className="max-w-2xl mx-auto"
+        >
+          <div className="relative rounded-lg overflow-hidden border-4 border-deep-brown dark:border-green-accent shadow-2xl">
+            <img
+              src="https://imgur.com/n6TvYYX.jpg"
+              alt="Scott G. A. Metcalf"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-deep-brown/40 to-transparent dark:from-dark-bg/40"></div>
+          </div>
+        </motion.div>
+      </section>
+
       {/* Biography */}
       <section className="section-container">
         <motion.div

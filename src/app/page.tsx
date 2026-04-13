@@ -98,7 +98,18 @@ export default function Home() {
           variants={containerVariants}
           className="grid grid-cols-1 md:grid-cols-2 gap-spacing-2xl items-center"
         >
-          <motion.div variants={itemVariants} className="space-y-spacing-md">
+          <motion.div variants={itemVariants} className="order-2 md:order-1">
+            <div className="relative rounded-lg overflow-hidden border-4 border-deep-brown dark:border-green-accent shadow-xl">
+              <img
+                src="https://imgur.com/n6TvYYX.jpg"
+                alt="Scott G. A. Metcalf"
+                className="w-full h-auto object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-deep-brown/40 to-transparent dark:from-dark-bg/40"></div>
+            </div>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="order-1 md:order-2 space-y-spacing-md">
             <h2 className="text-display-md text-deep-brown dark:text-dark-text">
               About the Author
             </h2>
@@ -113,21 +124,20 @@ export default function Home() {
                 Through intimate storytelling and personal correspondence, Scott invites readers into the interior world of soldiers, offering insights that extend far beyond the battlefield.
               </p>
             </div>
-          </motion.div>
 
-          <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-2 gap-spacing-md h-full"
-          >
-            <div className="bg-gradient-to-br from-deep-brown/30 to-muted-green/30 dark:from-green-accent/20 dark:to-muted-green/20 rounded-lg h-64 flex items-center justify-center border-2 border-deep-brown/20 dark:border-green-accent/30">
-              <span className="text-7xl font-serif font-bold text-deep-brown dark:text-green-accent">
-                {new Date().getFullYear() - 2003}
-              </span>
-            </div>
-            <div className="bg-gradient-to-br from-muted-green/30 to-charcoal/20 dark:from-dark-border dark:to-dark-elevated rounded-lg h-64 flex items-center justify-center border-2 border-muted-green/30 dark:border-green-accent/20">
-              <span className="text-3xl font-serif font-bold text-deep-brown dark:text-green-accent text-center px-4 leading-tight">
-                Years of<br />Reflection
-              </span>
+            <div className="pt-spacing-md border-t border-sand-dark dark:border-dark-border grid grid-cols-2 gap-spacing-md">
+              <div>
+                <p className="text-4xl font-serif font-bold text-deep-brown dark:text-green-accent">
+                  {new Date().getFullYear() - 2003}
+                </p>
+                <p className="text-body-sm text-charcoal/70 dark:text-dark-text-secondary">Years of Reflection</p>
+              </div>
+              <div>
+                <p className="text-4xl font-serif font-bold text-deep-brown dark:text-green-accent">
+                  8
+                </p>
+                <p className="text-body-sm text-charcoal/70 dark:text-dark-text-secondary">Published Works</p>
+              </div>
             </div>
           </motion.div>
         </motion.div>
