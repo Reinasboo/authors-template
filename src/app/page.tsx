@@ -11,7 +11,7 @@ export default function Home() {
   const books = [
     {
       id: 'letters-sand',
-      title: 'Letters from the Sand',
+      title: 'Letter to Home from the Sandbox',
       subtitle: 'A Reflective Memoir',
       description:
         'A raw and intimate exploration of deployment experiences in Iraq, examining the psychological weight of combat and the bonds forged in the desert. Through personal correspondence, Scott captures the emotional landscape of a soldier preparing to return home.',
