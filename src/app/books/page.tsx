@@ -187,7 +187,7 @@ export default function Books() {
       name: 'James Wellington',
       title: 'Correctional Officer, 15 years',
       location: 'Oklahoma City, OK',
-      image: 'https://images.unsplash.com/photo-1519085360771-9852f59a3579?w=400&h=400&fit=crop',
+      image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop',
       text: 'Inside The Walls told my story and the stories of my brothers and sisters in blue. Finally, someone who understands what it means to work in the shadows, maintaining dignity in an undignified system.',
       books: ['Inside The Walls'],
     },
