@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-charcoal text-sand dark:bg-dark-surface dark:text-dark-text border-t border-charcoal dark:border-dark-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-spacing-3xl">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-spacing-2xl mb-spacing-2xl">
           {/* Brand */}

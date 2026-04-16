@@ -9,24 +9,27 @@ export default function About() {
   return (
     <div className="min-h-screen pt-24 bg-sand-light dark:bg-dark-bg">
       {/* Page Header */}
-      <section className="section-container py-spacing-3xl border-b border-sand-dark dark:border-dark-border">
+      <section className="py-16 sm:py-24 md:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 border-b border-sand-dark dark:border-dark-border">
+        <div className="max-w-7xl mx-auto">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={fadeInVariants}
           className="max-w-3xl"
         >
-          <h1 className="text-display-lg text-deep-brown dark:text-dark-text mb-spacing-lg">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-light text-deep-brown dark:text-dark-text mb-8">
             About Scott
           </h1>
           <p className="text-body-lg text-charcoal/70 dark:text-dark-text-secondary">
             A soldier's perspective on war, memory, and the journey toward understanding.
           </p>
         </motion.div>
+        </div>
       </section>
 
       {/* Featured Author Image */}
-      <section className="section-container py-spacing-3xl">
+      <section className="py-16 sm:py-24 md:py-32 lg:py-40 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -42,22 +45,24 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-t from-deep-brown/40 to-transparent dark:from-dark-bg/40"></div>
           </div>
         </motion.div>
+        </div>
       </section>
 
       {/* Biography */}
-      <section className="section-container">
+      <section className="py-16 sm:py-24 md:py-32 lg:py-40 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
         <motion.div
           initial="hidden"
           whileInView="visible"
           variants={containerVariants}
-          className="grid grid-cols-1 md:grid-cols-3 gap-spacing-2xl"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12"
         >
-          <motion.div variants={itemVariants} className="md:col-span-2 space-y-spacing-lg">
+          <motion.div variants={itemVariants} className="md:col-span-2 space-y-8">
             <div>
-              <h2 className="text-heading-lg font-serif text-deep-brown dark:text-dark-text mb-spacing-md">
+              <h2 className="text-3xl font-serif text-deep-brown dark:text-dark-text mb-6">
                 The Story
               </h2>
-              <div className="prose prose-invert dark:prose dark:text-dark-text-secondary space-y-spacing-md">
+              <div className="prose prose-invert dark:prose dark:text-dark-text-secondary space-y-6">
                 <p className="text-body leading-relaxed text-charcoal dark:text-dark-text-secondary">
                   Scott G. A. Metcalf served as a soldier during the Iraq War, an experience that fundamentally shaped his understanding of human resilience, brotherhood, and the complex aftermath of combat. His time in the sandbox became the foundation for his memoir work—a literary exploration of war not as a political or patriotic theme, but as a human experience.
                 </p>
@@ -71,10 +76,10 @@ export default function About() {
             </div>
 
             <div>
-              <h3 className="text-heading-md font-serif text-deep-brown dark:text-dark-text mb-spacing-md">
+              <h3 className="text-2xl font-serif text-deep-brown dark:text-dark-text mb-6">
                 Writing Philosophy
               </h3>
-              <div className="space-y-spacing-md text-body text-charcoal dark:text-dark-text-secondary">
+              <div className="space-y-6 text-base text-charcoal dark:text-dark-text-secondary">
                 <p>
                   Scott writes from the principle that veteran voices matter—not as sources of inspiration porn or motivational content, but as legitimate literary and cultural contributions. Military memoirs deserve the same editorial rigor and artistic care as any other genre.
                 </p>
@@ -86,13 +91,13 @@ export default function About() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="md:col-span-1">
-            <div className="sticky top-32 space-y-spacing-lg">
+              <div className="sticky top-32 space-y-8">
               {/* Stats Card */}
-              <div className="bg-sand-dark/20 dark:bg-dark-elevated p-spacing-lg rounded-lg border border-sand-dark dark:border-dark-border space-y-spacing-md">
-                <h4 className="text-heading-sm font-serif text-deep-brown dark:text-dark-text">
+              <div className="bg-sand-dark/20 dark:bg-dark-elevated p-8 rounded-lg border border-sand-dark dark:border-dark-border space-y-6">
+                <h4 className="text-xl font-serif text-deep-brown dark:text-dark-text">
                   Quick Facts
                 </h4>
-                <ul className="space-y-spacing-sm text-body-sm text-charcoal dark:text-dark-text-secondary">
+                <ul className="space-y-4 text-sm text-charcoal dark:text-dark-text-secondary">
                   <li><strong>Genre:</strong> Military Memoir</li>
                   <li><strong>Focus:</strong> Psychology & Resilience</li>
                   <li><strong>Style:</strong> Intimate, Reflective</li>
@@ -102,7 +107,7 @@ export default function About() {
               </div>
 
               {/* Quote Card */}
-              <div className="bg-deep-brown text-sand dark:bg-green-accent dark:text-dark-bg p-spacing-lg rounded-lg space-y-spacing-md">
+              <div className="bg-deep-brown text-sand dark:bg-green-accent dark:text-dark-bg p-8 rounded-lg space-y-6">
                 <p className="text-sm italic leading-relaxed">
                   "Memoirs aren't self-indulgence. They're acts of bearing witness to what happened to us, to what we learned, to how we stayed human."
                 </p>
@@ -110,17 +115,19 @@ export default function About() {
             </div>
           </motion.div>
         </motion.div>
+        </div>
       </section>
 
       {/* Journey Timeline */}
-      <section className="section-container bg-sand-dark/10 dark:bg-dark-surface rounded-lg border border-sand-dark/50 dark:border-dark-border">
+      <section className="py-16 sm:py-24 md:py-32 lg:py-40 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto bg-sand-dark/10 dark:bg-dark-surface rounded-lg border border-sand-dark/50 dark:border-dark-border p-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
           variants={fadeInVariants}
           className="mb-spacing-2xl"
         >
-          <h2 className="text-heading-lg font-serif text-deep-brown dark:text-dark-text">
+          <h2 className="text-3xl font-serif text-deep-brown dark:text-dark-text">
             Journey
           </h2>
         </motion.div>
@@ -129,7 +136,7 @@ export default function About() {
           initial="hidden"
           whileInView="visible"
           variants={containerVariants}
-          className="space-y-spacing-lg"
+          className="space-y-8"
         >
           {[
             {
@@ -153,14 +160,14 @@ export default function About() {
               description: 'Publishing the trilogy and advocating for authentic veteran voices in literature and culture.',
             },
           ].map((milestone) => (
-            <motion.div key={milestone.year} variants={itemVariants} className="flex gap-spacing-lg">
+            <motion.div key={milestone.year} variants={itemVariants} className="flex gap-8">
               <div className="min-w-fit">
-                <span className="font-serif font-bold text-heading-sm text-deep-brown dark:text-green-accent">
+                <span className="font-serif font-bold text-xl text-deep-brown dark:text-green-accent">
                   {milestone.year}
                 </span>
               </div>
-              <div className="pb-spacing-lg border-b border-sand-dark/30 dark:border-dark-border flex-1">
-                <h4 className="font-medium text-body text-deep-brown dark:text-dark-text mb-spacing-sm">
+              <div className="pb-8 border-b border-sand-dark/30 dark:border-dark-border flex-1">
+                <h4 className="font-medium text-base text-deep-brown dark:text-dark-text mb-4">
                   {milestone.title}
                 </h4>
                 <p className="text-body-sm text-charcoal/70 dark:text-dark-text-secondary">
@@ -170,10 +177,12 @@ export default function About() {
             </motion.div>
           ))}
         </motion.div>
+        </div>
       </section>
 
       {/* Values Section */}
-      <section className="section-container">
+      <section className="py-16 sm:py-24 md:py-32 lg:py-40 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -189,7 +198,7 @@ export default function About() {
           initial="hidden"
           whileInView="visible"
           variants={containerVariants}
-          className="grid grid-cols-1 md:grid-cols-2 gap-spacing-lg"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {[
             {
@@ -212,9 +221,9 @@ export default function About() {
             <motion.div
               key={value.title}
               variants={itemVariants}
-              className="p-spacing-lg bg-sand-dark/10 dark:bg-dark-elevated rounded-lg border border-sand-dark dark:border-dark-border hover:border-deep-brown dark:hover:border-green-accent transition-colors"
+              className="p-8 bg-sand-dark/10 dark:bg-dark-elevated rounded-lg border border-sand-dark dark:border-dark-border hover:border-deep-brown dark:hover:border-green-accent transition-colors"
             >
-              <h3 className="text-heading-md font-serif text-deep-brown dark:text-dark-text mb-spacing-md">
+              <h3 className="text-2xl font-serif text-deep-brown dark:text-dark-text mb-6">
                 {value.title}
               </h3>
               <p className="text-body-sm text-charcoal/70 dark:text-dark-text-secondary">
@@ -223,6 +232,7 @@ export default function About() {
             </motion.div>
           ))}
         </motion.div>
+        </div>
       </section>
     </div>
   )
