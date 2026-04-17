@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { stripe, bookProducts, type BookId } from '@/lib/stripe'
+import { getStripe, bookProducts, type BookId } from '@/lib/stripe'
 
 export async function POST(request: NextRequest) {
   try {
@@ -16,6 +16,7 @@ export async function POST(request: NextRequest) {
     const book = bookProducts[bookId as BookId]
 
     // Create Stripe payment intent
+    const stripe = getStripe()
     const paymentIntent = await stripe.paymentIntents.create({
       amount: book.price,
       currency: 'usd',
