@@ -19,37 +19,44 @@ export const bookProducts = {
   'letters-sand': {
     id: 'letters-sand',
     name: 'Letter to Home from the Sandbox',
-    price: 1499, // $14.99 in cents
+    price: 500, // $5.00 in cents
     description: 'A Reflective Memoir of Deployment',
     filename: 'letter-to-home-from-sandbox.pdf',
   },
   'soldiers-sandbox': {
     id: 'soldiers-sandbox',
     name: 'Soldiers in the Sandbox',
-    price: 1499,
+    price: 500, // $5.00
     description: 'Continued Reflections from the Field',
     filename: 'soldiers-in-sandbox.pdf',
   },
   'inside-walls': {
     id: 'inside-walls',
     name: 'Inside The Walls',
-    price: 1499,
+    price: 1000, // $10.00
     description: 'A Correctional Officer Memoir',
     filename: 'inside-the-walls.pdf',
   },
   'crazy-lady': {
     id: 'crazy-lady',
     name: 'Crazy Lady',
-    price: 1299, // $12.99
+    price: 1000, // $10.00
     description: 'A Novel',
     filename: 'crazy-lady.pdf',
   },
   'starting-from-scratch': {
     id: 'starting-from-scratch',
     name: 'Starting From Scratch',
-    price: 1299,
+    price: 500, // $5.00
     description: 'A Journey of Reinvention',
     filename: 'starting-from-scratch.pdf',
+  },
+  'letters-from-sand': {
+    id: 'letters-from-sand',
+    name: 'Letters from the Sand',
+    price: 1000, // $10.00
+    description: 'Correspondence and Reflections',
+    filename: 'letters-from-the-sand.pdf',
   },
 } as const
 
