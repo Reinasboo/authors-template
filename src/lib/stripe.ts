@@ -16,12 +16,12 @@ export const getStripe = () => {
 
 // Book products configuration
 export const bookProducts = {
-  'letters-sand': {
-    id: 'letters-sand',
-    name: 'Letter to Home from the Sandbox',
-    price: 500, // $5.00 in cents
-    description: 'A Reflective Memoir of Deployment',
-    filename: 'letter-to-home-from-sandbox.pdf',
+  'letters-from-sand': {
+    id: 'letters-from-sand',
+    name: 'Letters from the Sand',
+    price: 1000, // $10.00
+    description: 'Correspondence and Reflections',
+    filename: 'letters-from-the-sand.pdf',
   },
   'soldiers-sandbox': {
     id: 'soldiers-sandbox',
@@ -50,13 +50,6 @@ export const bookProducts = {
     price: 500, // $5.00
     description: 'A Journey of Reinvention',
     filename: 'starting-from-scratch.pdf',
-  },
-  'letters-from-sand': {
-    id: 'letters-from-sand',
-    name: 'Letters from the Sand',
-    price: 1000, // $10.00
-    description: 'Correspondence and Reflections',
-    filename: 'letters-from-the-sand.pdf',
   },
 } as const
 
