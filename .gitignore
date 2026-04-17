@@ -42,3 +42,8 @@ Thumbs.db
 .AppleDouble
 .LSOverride
 .DS_Store
+
+# PDF Books (use external storage in production)
+/public/books/*.pdf
+/public/books/*.epub
+/public/books/*.mobi
