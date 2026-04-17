@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getStripe } from '@/lib/stripe'
+import { sendDownloadEmail } from '@/lib/send-email'
 import Stripe from 'stripe'
 
 export async function POST(request: NextRequest) {
@@ -25,13 +26,15 @@ export async function POST(request: NextRequest) {
       const paymentIntent = event.data.object as Stripe.PaymentIntent
       const metadata = paymentIntent.metadata
 
-      if (metadata.bookId && metadata.email) {
+      if (metadata.bookId && metadata.email && metadata.bookName) {
         // Send email with download link
-        await sendDownloadEmail(
-          metadata.email,
-          metadata.bookId,
-          metadata.bookName || 'Your Book'
-        )
+        const downloadUrl = `${process.env.NEXT_PUBLIC_APP_URL}/api/download/${metadata.bookId}?email=${encodeURIComponent(metadata.email)}`
+        
+        await sendDownloadEmail({
+          email: metadata.email,
+          bookName: metadata.bookName,
+          downloadUrl,
+        })
       }
     }
 
@@ -43,19 +46,4 @@ export async function POST(request: NextRequest) {
       { status: 400 }
     )
   }
-}
-
-async function sendDownloadEmail(
-  email: string,
-  bookId: string,
-  bookName: string
-) {
-  // For now, we'll just log this
-  // In production, integrate with email service (SendGrid, Nodemailer, etc.)
-  const downloadUrl = `${process.env.NEXT_PUBLIC_APP_URL}/api/download/${bookId}?email=${email}`
-  console.log(`Sending download link to ${email} for ${bookName}: ${downloadUrl}`)
-
-  // Example email body:
-  // Subject: Your Book is Ready to Download
-  // Body: Click here to download ${bookName}: ${downloadUrl}
 }
