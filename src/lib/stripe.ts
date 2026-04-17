@@ -22,6 +22,7 @@ export const bookProducts = {
     price: 1000, // $10.00
     description: 'Correspondence and Reflections',
     filename: 'letters-from-the-sand.pdf',
+    image: 'https://imgur.com/OAJtzds.jpg',
   },
   'soldiers-sandbox': {
     id: 'soldiers-sandbox',
@@ -29,6 +30,7 @@ export const bookProducts = {
     price: 500, // $5.00
     description: 'Continued Reflections from the Field',
     filename: 'soldiers-in-sandbox.pdf',
+    image: 'https://imgur.com/R6qIVw3.jpg',
   },
   'inside-walls': {
     id: 'inside-walls',
@@ -36,6 +38,7 @@ export const bookProducts = {
     price: 1000, // $10.00
     description: 'A Correctional Officer Memoir',
     filename: 'inside-the-walls.pdf',
+    image: 'https://imgur.com/D8JMFN8.jpg',
   },
   'crazy-lady': {
     id: 'crazy-lady',
@@ -43,6 +46,7 @@ export const bookProducts = {
     price: 1000, // $10.00
     description: 'A Novel',
     filename: 'crazy-lady.pdf',
+    image: 'https://imgur.com/GfjSvqm.jpg',
   },
   'starting-from-scratch': {
     id: 'starting-from-scratch',
@@ -50,6 +54,7 @@ export const bookProducts = {
     price: 500, // $5.00
     description: 'A Journey of Reinvention',
     filename: 'starting-from-scratch.pdf',
+    image: 'https://imgur.com/4WGRSKH.jpg',
   },
 } as const
 

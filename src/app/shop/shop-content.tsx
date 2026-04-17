@@ -74,8 +74,7 @@ export default function ShopContent() {
             variants={containerVariants}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {(Object.entries(bookProducts) as Array<[BookId, typeof bookProducts[BookId]]>).map(
-              ([bookId, book]) => (
+            {Object.entries(bookProducts).map(([bookId, book]: any) => (
                 <motion.div
                   key={bookId}
                   variants={itemVariants}
@@ -84,16 +83,24 @@ export default function ShopContent() {
                 >
                   <div className="bg-white dark:bg-dark-surface rounded-lg overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300 border border-sand-dark/30 dark:border-dark-border h-full flex flex-col"
                   >
-                    {/* Placeholder for book cover */}
-                    <div className="h-48 bg-gradient-to-br from-deep-brown/10 to-muted-green/10 dark:from-green-accent/10 dark:to-muted-green/10 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <div className="text-4xl font-serif font-light text-deep-brown dark:text-dark-text mb-2">
-                          {book.name.split(' ').slice(0, 2).join(' ')}
+                    {/* Book Cover Image */}
+                    <div className="h-48 bg-gradient-to-br from-deep-brown/10 to-muted-green/10 dark:from-green-accent/10 dark:to-muted-green/10 flex items-center justify-center p-4 overflow-hidden">
+                      {book.image ? (
+                        <img
+                          src={book.image}
+                          alt={book.name}
+                          className="h-full w-full object-cover rounded-sm"
+                        />
+                      ) : (
+                        <div className="text-center">
+                          <div className="text-4xl font-serif font-light text-deep-brown dark:text-dark-text mb-2">
+                            {book.name.split(' ').slice(0, 2).join(' ')}
+                          </div>
+                          <p className="text-sm text-charcoal/70 dark:text-dark-text-secondary">
+                            {book.name}
+                          </p>
                         </div>
-                        <p className="text-sm text-charcoal/70 dark:text-dark-text-secondary">
-                          {book.name}
-                        </p>
-                      </div>
+                      )}
                     </div>
 
                     {/* Content */}
