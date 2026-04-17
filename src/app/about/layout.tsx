@@ -17,13 +17,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'About Scott G. A. Metcalf | Military Memoir Author',
-    description: 'Learn about Scott G. A. Metcalf—a soldier, memoirist, and advocate for authentic veteran voices in literature.',
-    images: ['https://imgur.com/n6TvYYX.jpg'],
-    creator: '@scottmetcalfwrites',
-  },
 }
 
 export default function AboutLayout({

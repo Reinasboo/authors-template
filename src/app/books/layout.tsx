@@ -17,13 +17,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Books by Scott G. A. Metcalf | Complete Bibliography',
-    description: 'Explore all published works by Scott G. A. Metcalf—military memoirs, fiction, and international editions.',
-    images: ['https://imgur.com/OAJtzds.jpg'],
-    creator: '@scottmetcalfwrites',
-  },
 }
 
 export default function BooksLayout({

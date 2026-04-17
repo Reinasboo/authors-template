@@ -17,13 +17,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: 'summary',
-    title: 'Contact Scott G. A. Metcalf | Get in Touch',
-    description: 'Connect with Scott G. A. Metcalf. Have a question about his books? Reach out.',
-    images: ['https://imgur.com/g6qSRMs.png'],
-    creator: '@scottmetcalfwrites',
-  },
 }
 
 export default function ContactLayout({

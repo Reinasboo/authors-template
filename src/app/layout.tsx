@@ -42,14 +42,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Scott G. A. Metcalf | Military Memoir Author',
-    description: 'Reflective memoirs from a soldier\'s perspective. Explore the stories of war, brotherhood, and resilience.',
-    images: ['https://imgur.com/n6TvYYX.jpg'],
-    creator: '@scottmetcalfwrites',
-    site: '@scottmetcalfwrites',
-  },
 }
 
 export default function RootLayout({

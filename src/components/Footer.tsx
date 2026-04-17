@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Mail, Linkedin, Twitter } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { fadeInVariants } from '@/lib/animations'
 
@@ -28,8 +28,9 @@ export default function Footer() {
             <h4 className="font-medium text-sm uppercase tracking-widest">Navigate</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="text-sand/70 dark:text-dark-text-secondary hover:text-sand dark:hover:text-dark-text transition-colors">Home</Link></li>
-              <li><Link href="/about" className="text-sand/70 dark:text-dark-text-secondary hover:text-sand dark:hover:text-dark-text transition-colors">About</Link></li>
               <li><Link href="/books" className="text-sand/70 dark:text-dark-text-secondary hover:text-sand dark:hover:text-dark-text transition-colors">Books</Link></li>
+              <li><Link href="/shop" className="text-sand/70 dark:text-dark-text-secondary hover:text-sand dark:hover:text-dark-text transition-colors">Shop</Link></li>
+              <li><Link href="/about" className="text-sand/70 dark:text-dark-text-secondary hover:text-sand dark:hover:text-dark-text transition-colors">About</Link></li>
               <li><Link href="/contact" className="text-sand/70 dark:text-dark-text-secondary hover:text-sand dark:hover:text-dark-text transition-colors">Contact</Link></li>
             </ul>
           </motion.div>
@@ -38,14 +39,8 @@ export default function Footer() {
           <motion.div initial="hidden" whileInView="visible" variants={fadeInVariants} className="space-y-4">
             <h4 className="font-medium text-sm uppercase tracking-widest">Connect</h4>
             <div className="flex gap-3">
-              <a href="mailto:scott@example.com" className="p-2 rounded-lg hover:bg-sand/10 dark:hover:bg-dark-elevated transition-colors">
+              <a href="mailto:scottmetcalf69@gmail.com" className="p-2 rounded-lg hover:bg-sand/10 dark:hover:bg-dark-elevated transition-colors" aria-label="Email">
                 <Mail className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 rounded-lg hover:bg-sand/10 dark:hover:bg-dark-elevated transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 rounded-lg hover:bg-sand/10 dark:hover:bg-dark-elevated transition-colors">
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </motion.div>

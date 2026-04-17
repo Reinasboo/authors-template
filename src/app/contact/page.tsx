@@ -3,7 +3,7 @@
 export const dynamic = 'force-dynamic'
 
 import { motion } from 'framer-motion'
-import { Mail, Linkedin, Twitter } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import { useForm, ValidationError } from '@formspree/react'
 
 export default function Contact() {
@@ -60,40 +60,14 @@ export default function Contact() {
                 className="space-y-4 p-8 bg-sand-dark/10 dark:bg-dark-elevated rounded-xl border border-sand-dark/30 dark:border-dark-border"
               >
                 <a
-                  href="mailto:scott@example.com"
+                  href="mailto:scottmetcalf69@gmail.com"
                   className="flex items-start gap-4 hover:text-muted-green dark:hover:text-green-accent transition-colors"
                 >
                   <Mail className="w-5 h-5 mt-1 flex-shrink-0 text-deep-brown dark:text-green-accent" />
                   <div>
                     <p className="font-medium text-deep-brown dark:text-dark-text">Email</p>
                     <p className="text-sm text-charcoal/70 dark:text-dark-text-secondary">
-                      scott@example.com
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="#"
-                  className="flex items-start gap-4 hover:text-muted-green dark:hover:text-green-accent transition-colors"
-                >
-                  <Linkedin className="w-5 h-5 mt-1 flex-shrink-0 text-deep-brown dark:text-green-accent" />
-                  <div>
-                    <p className="font-medium text-deep-brown dark:text-dark-text">LinkedIn</p>
-                    <p className="text-sm text-charcoal/70 dark:text-dark-text-secondary">
-                      linkedin.com/in/scottmetcalf
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="#"
-                  className="flex items-start gap-4 hover:text-muted-green dark:hover:text-green-accent transition-colors"
-                >
-                  <Twitter className="w-5 h-5 mt-1 flex-shrink-0 text-deep-brown dark:text-green-accent" />
-                  <div>
-                    <p className="font-medium text-deep-brown dark:text-dark-text">Twitter</p>
-                    <p className="text-sm text-charcoal/70 dark:text-dark-text-secondary">
-                      @scottmetcalfwrites
+                      scottmetcalf69@gmail.com
                     </p>
                   </div>
                 </a>
