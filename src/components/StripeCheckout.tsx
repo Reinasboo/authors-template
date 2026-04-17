@@ -30,6 +30,17 @@ function CheckoutForm({ bookId }: CheckoutFormProps) {
 
   const book = bookProducts[bookId]
 
+  const handleDownload = () => {
+    // Download the PDF directly
+    const downloadUrl = `/api/download/${bookId}?email=${encodeURIComponent(email)}`
+    const link = document.createElement('a')
+    link.href = downloadUrl
+    link.download = book.filename
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
@@ -89,10 +100,30 @@ function CheckoutForm({ bookId }: CheckoutFormProps) {
           Payment Successful!
         </h3>
         <p className="text-charcoal dark:text-dark-text-secondary mb-6">
-          A download link has been sent to <strong>{email}</strong>
+          Your purchase of <strong>{book.name}</strong> is complete!
         </p>
-        <p className="text-sm text-charcoal/70 dark:text-dark-text-secondary/70">
-          Check your email for "{book.name}"
+
+        {/* Download Button */}
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={handleDownload}
+          className="w-full mb-4 py-3 bg-deep-brown dark:bg-green-accent text-sand dark:text-dark-bg rounded-lg font-medium hover:opacity-90 transition-opacity"
+        >
+          📥 Download Now
+        </motion.button>
+
+        <div className="bg-sand-dark/10 dark:bg-dark-elevated p-4 rounded-lg mb-4 text-left">
+          <p className="text-sm text-charcoal dark:text-dark-text-secondary">
+            ✓ Download link also sent to: <strong>{email}</strong>
+          </p>
+          <p className="text-xs text-charcoal/70 dark:text-dark-text-secondary/70 mt-2">
+            Check your email for the file and receipt.
+          </p>
+        </div>
+
+        <p className="text-xs text-charcoal/50 dark:text-dark-text-secondary/50">
+          Thank you for your purchase!
         </p>
       </motion.div>
     )
