@@ -39,7 +39,7 @@ export default function Footer() {
           <motion.div initial="hidden" whileInView="visible" variants={fadeInVariants} className="space-y-4">
             <h4 className="font-medium text-sm uppercase tracking-widest">Connect</h4>
             <div className="flex gap-3">
-              <a href="mailto:scottmetcalf69@yahoo.com" className="p-2 rounded-lg hover:bg-sand/10 dark:hover:bg-dark-elevated transition-colors" aria-label="Email">
+              <a href="mailto:scottmetcalf59@yahoo.com" className="p-2 rounded-lg hover:bg-sand/10 dark:hover:bg-dark-elevated transition-colors" aria-label="Email">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
