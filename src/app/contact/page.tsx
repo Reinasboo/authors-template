@@ -60,14 +60,14 @@ export default function Contact() {
                 className="space-y-4 p-8 bg-sand-dark/10 dark:bg-dark-elevated rounded-xl border border-sand-dark/30 dark:border-dark-border"
               >
                 <a
-                  href="mailto:scottmetcalf59@gmail.com"
+                  href="mailto:scottmetcalf@yahoo.com"
                   className="flex items-start gap-4 hover:text-muted-green dark:hover:text-green-accent transition-colors"
                 >
                   <Mail className="w-5 h-5 mt-1 flex-shrink-0 text-deep-brown dark:text-green-accent" />
                   <div>
                     <p className="font-medium text-deep-brown dark:text-dark-text">Email</p>
                     <p className="text-sm text-charcoal/70 dark:text-dark-text-secondary">
-                      scottmetcalf59@gmail.com
+                      scottmetcalf@yahoo.com
                     </p>
                   </div>
                 </a>
