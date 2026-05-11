@@ -131,6 +131,41 @@ export default function ShopContent() {
                         >
                           Buy Now
                         </motion.button>
+
+                        {/* Physical Book Options */}
+                        {book.formats && (
+                          <div className="mt-4 pt-4 border-t border-sand-dark/30 dark:border-dark-border">
+                            <p className="text-xs uppercase tracking-widest text-charcoal/60 dark:text-dark-text-secondary/60 mb-3">
+                              Physical Copies
+                            </p>
+                            <div className="space-y-2">
+                              {book.formats.paperback && (
+                                <motion.a
+                                  href={book.formats.paperback}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  whileHover={{ scale: 1.02 }}
+                                  whileTap={{ scale: 0.98 }}
+                                  className="block w-full py-2 text-center bg-sand-dark/10 dark:bg-dark-elevated text-deep-brown dark:text-green-accent rounded-lg font-medium hover:bg-sand-dark/20 dark:hover:bg-dark-border transition-colors text-sm"
+                                >
+                                  Paperback
+                                </motion.a>
+                              )}
+                              {book.formats.hardcover && (
+                                <motion.a
+                                  href={book.formats.hardcover}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  whileHover={{ scale: 1.02 }}
+                                  whileTap={{ scale: 0.98 }}
+                                  className="block w-full py-2 text-center bg-sand-dark/10 dark:bg-dark-elevated text-deep-brown dark:text-green-accent rounded-lg font-medium hover:bg-sand-dark/20 dark:hover:bg-dark-border transition-colors text-sm"
+                                >
+                                  Hardcover
+                                </motion.a>
+                              )}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
