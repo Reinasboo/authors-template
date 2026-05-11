@@ -3,13 +3,18 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
+interface BookFormats {
+  paperback?: string
+  hardcover?: string
+}
+
 interface BookCardProps {
   id: string
   title: string
   subtitle: string
   description: string
   image?: string
-  amazonUrl?: string
+  formats?: BookFormats
   index?: number
 }
 
@@ -18,7 +23,7 @@ export default function BookCard({
   subtitle,
   description,
   image,
-  amazonUrl = 'https://amazon.com',
+  formats = {},
   index = 0,
 }: BookCardProps) {
   const [isHovered, setIsHovered] = useState(false)
@@ -127,23 +132,45 @@ export default function BookCard({
           {/* Divider */}
           <div className="h-px bg-sand-dark/30 dark:bg-dark-border/30 my-4" />
 
-          {/* CTA Link - Premium Hover State */}
-          <motion.a
-            href={amazonUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium tracking-wide text-muted-green dark:text-green-accent hover:text-deep-brown dark:hover:text-green-accent/80 transition-colors inline-flex items-center gap-2"
-            whileHover={{ x: 4 }}
-            transition={{ duration: 0.3 }}
-          >
-            <span>Explore on Amazon</span>
-            <motion.span
-              animate={{ x: isHovered ? 4 : 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              →
-            </motion.span>
-          </motion.a>
+          {/* Buy Format Options */}
+          <div className="space-y-2">
+            {formats.paperback && (
+              <motion.a
+                href={formats.paperback}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium tracking-wide text-muted-green dark:text-green-accent hover:text-deep-brown dark:hover:text-green-accent/80 transition-colors inline-flex items-center gap-2 block"
+                whileHover={{ x: 4 }}
+                transition={{ duration: 0.3 }}
+              >
+                <span>Paperback</span>
+                <motion.span
+                  animate={{ x: isHovered ? 4 : 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  →
+                </motion.span>
+              </motion.a>
+            )}
+            {formats.hardcover && (
+              <motion.a
+                href={formats.hardcover}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium tracking-wide text-muted-green dark:text-green-accent hover:text-deep-brown dark:hover:text-green-accent/80 transition-colors inline-flex items-center gap-2 block"
+                whileHover={{ x: 4 }}
+                transition={{ duration: 0.3 }}
+              >
+                <span>Hardcover</span>
+                <motion.span
+                  animate={{ x: isHovered ? 4 : 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  →
+                </motion.span>
+              </motion.a>
+            )}
+          </div>
         </div>
       </motion.div>
     </motion.div>

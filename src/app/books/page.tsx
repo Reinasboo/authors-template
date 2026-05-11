@@ -29,7 +29,10 @@ export default function Books() {
         'Journey toward healing and understanding',
       ],
       image: 'https://imgur.com/OAJtzds.jpg',
-      amazonUrl: 'https://www.amazon.com/Letter-Home-Sandbox-Scott-Metcalf-ebook/dp/B0G1D2Q2HP?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.UBSdf-GztWfLGUCavloXMF6MZWWs7hbeSKFBDXia9s-2AuAxBZ8T_lqnrE8l7r1bj-V0f35gOp2Qt9OBYv_gosf8Snu7DJ2cIGIvDvGSXUDDKbsBymJ2Xd2GNs3e3e9F.fd0XyMBWwTV7haQ2JTfCYLsXDH5sVCOxvBsrPmEABtU&dib_tag=AUTHOR',
+      formats: {
+        paperback: 'https://www.barnesandnoble.com/w/letter-to-home-from-the-sandbox-scott-g-a-metcalf/1148702970?ean=9798349679315',
+        hardcover: 'https://www.barnesandnoble.com/w/letter-to-home-from-the-sandbox-scott-g-a-metcalf/1148702970?ean=9798349679353',
+      },
     },
     {
       id: 'soldiers-sandbox',
@@ -47,7 +50,10 @@ export default function Books() {
         'Brotherhood and loyalty',
         'The aftermath of deployment',
       ],
-      amazonUrl: 'https://www.amazon.com/Soldiers-Sandbox-Scott-G-Metcalf-ebook/dp/B0GFFQ1P2P?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.UBSdf-GztWfLGUCavloXMF6MZWWs7hbeSKFBDXia9s-2AuAxBZ8T_lqnrE8l7r1bj-V0f35gOp2Qt9OBYv_gosf8Snu7DJ2cIGIvDvGSXUDDKbsBymJ2Xd2GNs3e3e9F.fd0XyMBWwTV7haQ2JTfCYLsXDH5sVCOxvBsrPmEABtU&dib_tag=AUTHOR',
+      formats: {
+        paperback: 'https://www.barnesandnoble.com/w/soldiers-in-the-sandbox-scott-g-a-metcalf/1149044044?ean=9798295506666',
+        hardcover: 'https://www.barnesandnoble.com/w/soldiers-in-the-sandbox-scott-g-a-metcalf/1149044044?ean=9798295507502',
+      },
     },
     {
       id: 'inside-walls',
@@ -65,7 +71,10 @@ export default function Books() {
         'Criminal justice and law enforcement perspective',
         'Integrity in a system designed to strip it away',
       ],
-      amazonUrl: 'https://www.amazon.com/Inside-Walls-Scott-G-Metcalf-ebook/dp/B0DP1WBSCF?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.UBSdf-GztWfLGUCavloXMF6MZWWs7hbeSKFBDXia9s-2AuAxBZ8T_lqnrE8l7r1bj-V0f35gOp2Qt9OBYv_gosf8Snu7DJ2cIGIvDvGSXUDDKbsBymJ2Xd2GNs3e3e9F.fd0XyMBWwTV7haQ2JTfCYLsXDH5sVCOxvBsrPmEABtU&dib_tag=AUTHOR',
+      formats: {
+        paperback: 'https://www.barnesandnoble.com/w/inside-the-walls-scott-g-a-metcalf/1149779487?ean=9798295746697',
+        hardcover: 'https://www.barnesandnoble.com/w/inside-the-walls-scott-g-a-metcalf/1149779487?ean=9798295484346',
+      },
     },
   ]
 
@@ -86,7 +95,10 @@ export default function Books() {
         'Literary fiction',
       ],
       image: 'https://imgur.com/GfjSvqm.jpg',
-      amazonUrl: 'https://www.amazon.com/Crazy-Lady-Scott-G-Metcalf-ebook/dp/B0GF8RCGZF?ref_=ast_author_dp_rw&th=1&psc=1',
+      formats: {
+        paperback: 'https://www.barnesandnoble.com/w/inside-the-walls-scott-g-a-metcalf/1149779487?ean=9798295484346',
+        hardcover: 'https://www.barnesandnoble.com/w/crazy-lady-scott-g-a-metcalf/1149078445?ean=9781977287106',
+      },
     },
     {
       id: 'starting-from-scratch',
@@ -104,7 +116,9 @@ export default function Books() {
         'Life transitions',
       ],
       image: 'https://imgur.com/4WGRSKH.jpg',
-      amazonUrl: 'https://www.amazon.com/Starting-Scratch-Scott-G-Metcalf-ebook/dp/B0DYPFXSBC?ref_=ast_author_dp_rw&th=1&psc=1',
+      formats: {
+        paperback: 'https://www.barnesandnoble.com/w/crazy-lady-scott-g-a-metcalf/1149078445?ean=9781977287106',
+      },
     },
   ]
 
@@ -126,7 +140,10 @@ export default function Books() {
         'Hardcover & Paperback',
       ],
       image: 'https://imgur.com/FZnfUIF.jpg',
-      amazonUrl: 'https://www.amazon.com/Cartas-desde-el-Desierto-Spanish/dp/B0GFQ85VGX?ref_=ast_author_dp_rw&th=1&psc=1',
+      formats: {
+        paperback: 'https://www.barnesandnoble.com/w/cartas-desde-el-desierto-scott-g-a-metcalf/1149149453?ean=9798901188415',
+        hardcover: 'https://www.barnesandnoble.com/w/cartas-desde-el-desierto-scott-g-a-metcalf/1149149453?ean=9798901188422',
+      },
     },
     {
       id: 'lettres-desert',
@@ -145,7 +162,9 @@ export default function Books() {
         'Paperback available',
       ],
       image: 'https://imgur.com/cXOyQrb.jpg',
-      amazonUrl: 'https://www.amazon.com/Lettres-venues-du-d%C3%A9sert-French/dp/B0GFGNN15K?ref_=ast_author_dp_rw&th=1&psc=1',
+      formats: {
+        paperback: 'https://www.barnesandnoble.com/w/lettres-venues-du-da-a-a-sert-scott-g-a-metcalf/1149152230?ean=9798901188446',
+      },
     },
   ]
 
@@ -404,13 +423,30 @@ export default function Books() {
                         </dl>
                       </div>
 
-                      <Button
-                        href={book.amazonUrl}
-                        variant="primary"
-                        className="w-full text-center"
-                      >
-                        Read on Amazon
-                      </Button>
+                      <div className="flex gap-3">
+                        {book.formats?.paperback && (
+                          <Button
+                            href={book.formats.paperback}
+                            variant="primary"
+                            className="flex-1 text-center"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Paperback
+                          </Button>
+                        )}
+                        {book.formats?.hardcover && (
+                          <Button
+                            href={book.formats.hardcover}
+                            variant="primary"
+                            className="flex-1 text-center"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Hardcover
+                          </Button>
+                        )}
+                      </div>
                       <Button
                         variant="secondary"
                         className="w-full text-center"
